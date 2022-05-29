@@ -310,7 +310,7 @@ background-size: .65em auto, 100%;
 
       /* Dispositivos Extra Pequeños (teléfono vertical (portrait), less than 576px) */
 	  
-	  @media (max-width: 575.98px){
+	  @media only screen and (max-width: 575.98px){
 
 		#carouselExampleInterval {
 			display: none;
