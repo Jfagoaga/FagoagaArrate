@@ -1,0 +1,560 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+header{
+	width: 100%;
+	height: 80px;
+	background-color: rgb(255, 255, 255);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 100;
+	
+}
+
+
+.tarjetas{
+	display: grid;
+	grid-template-columns:  repeat(auto-fit, 400px);
+	grid-template-rows: 553px ;
+	gap: 10px;
+	justify-content: space-around;
+	
+}
+
+
+.motoAuto{
+	display:grid;
+	grid-template-columns: repeat(auto-fit, 380px);
+	grid-template-rows: 260px ;
+	justify-content: space-around;
+	
+	}
+
+	.motoAuto  img{
+		display: flex;
+		flex-direction: column;
+		padding: 5px;
+	
+		width: 100%;
+	} 
+
+
+.slider-container{
+  text-align: center;
+}
+
+.contenedor img{
+	
+	height: 70px;
+	float: left;
+	margin: 6px;
+}
+
+.contenedor{
+	display: flex;
+	flex-direction: row;
+	justify-items: center;
+	align-items: center;
+	justify-items: center;
+	width: 98%;
+	margin: auto;
+	display: table;
+}
+
+#menu-bar{
+	display: none;
+}
+
+header label{
+	float: right;
+	margin: 6px;
+	cursor: pointer;
+}
+
+.contenedor label img{
+	height:25px;
+	margin-top: 20px;
+	
+}
+
+.menu{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 80px;
+	left: 0;
+	background: rgba(51, 51, 51, 0.9);
+	transition: all 0.5s;
+	transform:translateX(-100%);
+}
+
+.menu a {
+	display: block;
+	color: #fff;
+	height: 50px;
+	text-decoration: none;
+	text-align: center;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	padding: 15px;
+	border-bottom: 1px solid rgba(255, 255,255, 0.5);
+	
+}
+
+.menu a:hover  {
+	background:  rgba(255, 255,255, 0.3);
+}
+
+#menu-bar:checked ~ .menu {
+	transform:translateX(0%);
+}
+
+.buscador{
+    text-align: center;
+	background-color: antiquewhite;
+	height: 100px;
+	font-size: 20px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.buscarIcon{
+	padding-right: 10px;
+}
+
+.donde{
+	padding-right: 10px;
+
+	}
+
+.iconDonde{
+	display: flex;
+	justify-content: center;
+	padding: 15px 0 0 0;
+}
+
+
+
+
+
+ .footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    height: 80px;
+    margin-top: 10px;
+	padding: 15px;
+    background: #ebebeb;
+    color: rgb(39, 39, 39);
+} 
+
+.redesInf img{
+	
+	height: 30px;
+    padding:5px 0 0 0;
+
+}
+
+.menuBig{
+   
+    
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;   
+}
+
+.menuBig ul{
+  
+    display: inline-flex;
+	padding-bottom: 20px;
+}
+
+.menuBig a{
+   
+    display: inline-flex;
+    padding: 40px 30px 0px 40px;
+	margin: 0px;
+    text-decoration: none;
+    color:#042A80;
+}
+
+.menuBig ul li:hover a {
+    color: #CF1D2E;
+    height: 2px;
+}
+
+.cards{
+    display: block;
+	flex-direction: column;
+	width: 410px;
+	margin-top: 90px;
+	
+   
+}
+
+.card1{
+    display: flex;
+    flex-direction: column;
+
+
+    background-color: #dbdada;
+    border-radius: 5%;
+    margin: 15px;
+}
+
+.card1 h1{
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    padding: 15px;
+    text-align: center;
+
+}
+
+.card1 p{
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    padding: 25px;
+    min-height: 80px;
+
+}
+
+
+.imgBtn {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-bottom: 20px;
+    width: 150px;
+
+}
+
+/* CSS MODIFICADO */
+
+.styled-select { width: 100%; height: 34px; overflow: hidden; background: url(new_arrow.png) no-repeat right #ddd; border: 1px solid #ccc; }
+
+ 
+
+.sidebar-box select{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 18px;
+padding: 2px 10px;
+height:22px;
+min-width: 225px;
+-webkit-appearance: none;
+height: 28px;
+background-color: #ffffff; 
+background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+    linear-gradient(to bottom, #ffffff 0%,#f7f7f7 100%);
+background-repeat: no-repeat, repeat;
+background-position: right .7em top 50%, 0 0;
+background-size: .65em auto, 100%;
+}
+
+
+
+
+
+      /* Dispositivos Extra Pequeños (teléfono vertical (portrait), less than 576px) */
+	  
+	  @media (max-width: 575.98px){
+
+		#carouselExampleInterval {
+			display: none;
+		}
+
+		.footer{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-size: 18px;
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+			height: 80px;
+			margin-top: 10px;
+			padding: 15px;
+			background: #ffffff;
+			color: rgb(39, 39, 39);
+		} 
+		
+		.redesInf img{
+			
+			height: 30px;
+			padding:5px 0 0 0;
+		
+		}
+
+		.redesSup{
+			display: none;
+		}
+		
+	}
+
+	/* Pequeños Dispositivos (teléfono apaisado (landscape), 576px y arriba) */
+	@media only screen and (max-width: 767.98px){
+		
+		#carouselExampleInterval {
+			display: none;
+		}
+
+		
+	}
+
+	/* Dispositivos Medianos (tablets, 768px y arriba) */
+	@media only screen and  (max-width: 991.98px) {
+			
+		.sidebar-box {
+			padding-top: 0px;
+
+		}
+
+		#carouselExampleInterval {
+			display: none;
+		}
+		
+	}
+
+	/* Dispositivos Grandes (desktops, 992px y arriba) */
+	@media (min-width: 1200px) {
+		
+		.icon-menu{
+		display: none;
+	}
+
+
+	.menu{
+		display: flex;
+		justify-content: center;
+		position: absolute;
+		width: 100%;
+		height: 100vh;
+		top: 0px;
+		left: 0;
+		background: none;
+		transition: none;
+		transform:none;
+		animation-play-state: paused;
+	}
+	
+	.menu a {
+		
+		border-bottom: none;
+		color: rgb(48, 48, 48);
+		padding: 0px;
+		
+	}
+
+	.menu li {
+		display: inline-flex;
+		padding: 40px 30px 30px 40px;
+		color: none;
+		height: 0;
+		text-decoration: none;
+		font-size: 18px;
+		text-align: none;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		border-bottom: none;
+		
+		
+	}
+	
+	.menu a:hover  {
+		background:  none;
+		color: #CF1D2E;
+		height: 2px;
+	}
+	
+	#menu-bar:checked ~ .menu {
+		transform:none;
+		animation-play-state: paused;
+	}
+
+	
+
+	}
+
+	/* Dispositivos Extra Grandes (large desktops, 1200px y arriba) */
+	@media (min-width: 1200px){
+
+		
+		.menu{
+			display: flex;
+			justify-content: center;
+			position: absolute;
+			width: 100%;
+			height: 50vh;
+			top: 0px;
+			left: 0;
+			background: none;
+			transition: none;
+			transform:none;
+		}
+		
+		.menu a {
+			
+			border-bottom: none;
+			color: rgb(48, 48, 48);
+			
+		}
+
+		.menu li {
+			display: inline-flex;
+    		padding: 40px 30px 0px 40px;
+			color: none;
+			height: 0;
+			text-decoration: none;
+			font-size: 18px;
+			text-align: none;
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			border-bottom: none;
+			
+			
+		}
+		
+		.menu a:hover  {
+			background:  none;
+			color: #CF1D2E;
+    		height: 2px;
+		}
+		
+		#menu-bar:checked ~ .menu {
+			transform:none;
+		}
+
+
+
+
+
+		.mapa iframe{
+			height: 450px;
+			width: 100%;
+			overflow: hidden;
+		}
+
+	
+
+		.buscador{
+
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding-top: 10px;
+		font-size: 30px;
+		margin: 0px;
+		}
+
+		.sidebar-box {
+			padding-top: 15px;
+		}
+			 
+		
+		.contenedor{
+		width: 80%;            
+		display: table;
+	}
+
+	.contenedor img{
+		
+		height: 100px;
+		float: left;
+		margin: 6px;
+		padding-top: 10px;
+	}
+
+
+	header{
+		height: 120px;
+	}
+
+	.icon-menu{
+		display: none;
+	}
+
+
+	.footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	justify-items: center;
+	font-size: 20px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+	height: 80px;
+	margin-top: 10px;
+	padding: 15px;
+	background: #ebebeb;
+	color: rgb(39, 39, 39);
+} 
+
+.redesInf img{
+	
+	height: 30px;
+	padding:5px 10 0 10;
+	padding-left: 10px;
+
+}
+
+
+		.card1{
+		
+		padding:5px;
+		width: 400px;
+		}
+
+
+		}
+
+
+
+		

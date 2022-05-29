@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrate</title>
+    <link rel="shortcut icon" href="imagenes/favicon.png">
+    <link rel="stylesheet" href="./css/arrate.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">      
+
+</head>
+
+<body>
+
+    <header>
+
+            <div class="menuHorizontal">
+
+                <a href="index.html"><img src="imagenes/logo.png" alt="arrate"></a>
+
+
+                <nav class="menu">
+                     <ul> 
+                       <li><a href="motos.html">Motos</a></li>
+                       <li><a href="quienessomos.html">Quienes somos</a></li>
+                       <li><a href="autos.html">Autos</a></li>
+                       <li><a href="contacto.html">Contacto</a></li> 
+                    </ul>                   
+                </nav>  
+
+                <div class="redesSup">
+                    <a href="https://www.facebook.com/"><img src="imagenes/facebook.png" alt="facebook"></a>
+                    <a href="https://www.instagram.com/"><img src="imagenes/instagram.png" alt="instagram"><a>
+                </div>
+
+            </div>
+
+           <div class="swiffy-slider slider-item-nogap slider-nav-animation slider-nav-animation-fadein                    slider-nav-autoplay">
+                        <ul class="slider-container">
+                        <li><img src="imagenes/enca2.jpg" style="max-width: 100%;height: auto;"></li>
+                        <li><img src="imagenes/enca1.jpg" style="max-width: 100%;height: auto;"></li>
+                        <li><img src="imagenes/enca3.jpg" style="max-width: 100%;height: auto;"></li>
+                        </ul>
+                    
+                        <button type="button" class="slider-nav"></button>
+                        <button type="button" class="slider-nav slider-nav-next"></button>
+                    
+                        <div class="slider-indicators">
+                            <button class="active"></button>
+                            <button></button>
+                            <button></button>
+                        </div>
+            </div>
+
+    </header>
+
+    <main>
+    
+        <section class="formContacto">
+            
+            <div class="form">
+            
+            <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+                <h3>Contacto</h3>
+                <div class="formNombre">
+                    <label for="nombre"></label>
+                    <input id="nombre" type="text" name="nombre" placeholder="Ingresa un nombre">
+                </div>
+    
+                <div class="formApellido">
+                    <label for="apellido"></label>
+                    <input id="apellido" type="text" name="apellido" placeholder="Ingresa un apellido">
+                </div>
+    
+                <div class="label">
+                    <label for="ciudad">Ciudad</label>
+                    <select name="ciudad">
+                        <option value="" hidden>Selecciona una ciudad</option>
+                        <option value="">Buenos Aires</option>
+                        <option value="">Mar del Plata</option>
+                        <option value="">Necochea</option>
+                    </select>
+                </div>
+    
+                <div class="input">
+                    <input type="checkbox" name="seleccion" value="si" >
+                    <div>Desea recibir nuestro newsletter</div>
+                    
+                </div>
+    
+                <div>
+                    <label for="mensaje"></label>
+                    <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+                </div>
+    
+                <div class="botones">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </div>
+
+            </form>
+            <div class="mapa2">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3120.4686731237293!2d-58.75214578440476!3d-38.54601438406882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x958fbd77a018af17%3A0xba8902a6a8eb1096!2zQ29tcGHDscOtYSBBcnJhdGU!5e0!3m2!1ses-419!2sar!4v1651441473945!5m2!1ses-419!2sar" width="1100px" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        </div>
+
+        </div>
+           
+
+       
+        
+        </section> 
+    
+
+         
+        <div class="motoAuto">
+        
+            <div class="autos">
+                <img src="imagenes/auto.jpg" alt="auto">
+            </div>
+
+            <div class="motos">
+                <img src="imagenes/moto2.jpg" alt="moto">
+            </div>
+
+            <div class="cuatris">
+                <img src="imagenes/cuatri.jpg" alt="cuatri">
+            </div> 
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <h3> Compania Arrate - 59 esquina 80 - Necochea</h3>
+        <a href="https://www.facebook.com/"><img src="imagenes/facebook.png" alt="facebook"></a>
+        <a href="https://www.instagram.com/"><img src="imagenes/instagram.png" alt="instagram"></a> 
+    </footer>
+
+</body>
+</html>
