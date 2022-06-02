@@ -10,6 +10,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
 
 
 </head>
@@ -17,16 +28,22 @@
 <body class="grilla">
     <header>
         <div class="contenedor">
-            <a href="index_grid.html"><img class="animate__animated animate__bounce" src="imagenes/logo.png" alt=""></a>
-            <input type="checkbox" name="" id="menu-bar">
-            <label class="icon-menu" for="menu-bar"><img src="imagenes/icon-menu.png" alt="arrate"></label>
-            <nav class="menu">
-                <ul>
-                    <li><a href="motos_grid.html">Motos</a></li>
-                    <li><a href="quienessomos.html">Quienes somos</a></li>
-                    <li><a href="autos.html">Autos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
+            <!-- <input type="checkbox" name="" id="menu-bar"> -->
+            <!-- <label class="icon-menu" for="menu-bar"><img src="imagenes/icon-menu.png" alt="arrate"></label> -->
+           
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+                <div class="container px-4 px-lg-5">
+                    <a class="navbar-brand" href="index_grid.html"><img class="animate__animated animate__bounce" src="/imagenes/logo.png" alt=""></a>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="quienessomos.html">Quienes Somos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="motos.html">Motos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="autos.html">Autos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
 
         </div>
@@ -107,17 +124,20 @@
 
     </main>
 
-    <footer class="footer">
-        <h3> Compania Arrate - 59 esquina 80 - Necochea</h3>
-        <div class="redesInf">
-            <a href="https://www.facebook.com/"><img src="imagenes/facebook.png" alt="facebook"></a>
-            <a href="https://www.instagram.com/"><img src="imagenes/instagram.png" alt="instagram"></a>
-        </div>
+    <footer class="bg-light py-5 fuente">
+        <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Compania Arrate -  Necochea - Argentina</div></div>
     </footer>
-
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 
 </html>
