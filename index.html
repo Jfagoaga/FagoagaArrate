@@ -11,7 +11,7 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.png" />
     <!-- Bootstrap Icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Google fonts-->
@@ -20,20 +20,16 @@
     <!-- SimpleLightbox plugin CSS-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-
-
+    <link href="css/grid.css" rel="stylesheet" />
 </head>
+
 <!-- Estoy probando si me acuerdo como usar git -->
 <body class="grilla">
     <header>
         <div class="contenedor">
-            <!-- <input type="checkbox" name="" id="menu-bar"> -->
-            <!-- <label class="icon-menu" for="menu-bar"><img src="imagenes/icon-menu.png" alt="arrate"></label> -->
-           
             <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
                 <div class="container px-4 px-lg-5">
-                    <a class="navbar-brand" href="index_grid.html"><img class="animate__animated animate__bounce" src="imagenes/logo.png" alt=""></a>
+                    <a class="navbar-brand" href="index.html"><img class="animate__animated animate__bounce" src="imagenes/logo.png" alt=""></a>
                     <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ms-auto my-2 my-lg-0">
@@ -45,88 +41,90 @@
                     </div>
                 </div>
             </nav>
-
         </div>
     </header>
 
     <main>
-        
-
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="imagenes/enca1.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img src="imagenes/enca2.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="imagenes/enca3.jpg" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="imagenes/enca1.jpg" class="d-block w-100" alt="...">
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="imagenes/enca2.jpg" class="d-block w-100" alt="...">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="imagenes/enca3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+            </div>
               
-        <section>
-            <div class="buscador">
-                <div class="iconDonde">
-                    <div class="buscarIcon">
-                        <img src="imagenes/ubicacion.png" alt="ubicacion">
+            <section>
+                    <div class="buscador">
+                        <div class="iconDonde">
+                            <div class="buscarIcon">
+                                <img src="imagenes/ubicacion.png" alt="ubicacion">
+                            </div>
+
+                            <div class="donde">
+                                <h2>¿Donde encontrarnos?</h2>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-box">
+                            <select class="styled-select">
+                                <option value="" hidden>Selecciona una ciudad</option>
+                                <option value="">Buenos Aires</option>
+                                <option value="">Mar del Plata</option>
+                                <option value="">Necochea</option>
+                            </select>
+                        </div>
                     </div>
 
-                    <div class="donde">
-                        <h2>¿Donde encontrarnos?</h2>
+                    <div class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3120.4686731237293!2d-58.75214578440476!3d-38.54601438406882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x958fbd77a018af17%3A0xba8902a6a8eb1096!2zQ29tcGHDscOtYSBBcnJhdGU!5e0!3m2!1ses-419!2sar!4v1651441473945!5m2!1ses-419!2sar"
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
+            </section>
+
+            <div class="motoAuto">
+
+                <div class="autos">
+                    <img src="imagenes/auto.jpg" alt="auto">
                 </div>
 
-                <div class="sidebar-box">
-                    <select class="styled-select">
-                        <option value="" hidden>Selecciona una ciudad</option>
-                        <option value="">Buenos Aires</option>
-                        <option value="">Mar del Plata</option>
-                        <option value="">Necochea</option>
-                    </select>
+                <div class="motos">
+                    <img src="imagenes/moto2.jpg" alt="moto">
+                </div>
+
+                <div class="cuatris">
+                    <img src="imagenes/cuatri.jpg" alt="cuatri">
                 </div>
             </div>
-
-            <div class="mapa">
-
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3120.4686731237293!2d-58.75214578440476!3d-38.54601438406882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x958fbd77a018af17%3A0xba8902a6a8eb1096!2zQ29tcGHDscOtYSBBcnJhdGU!5e0!3m2!1ses-419!2sar!4v1651441473945!5m2!1ses-419!2sar"
-                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-            </div>
-
-        </section>
-        <div class="motoAuto">
-
-            <div class="autos">
-                <img src="imagenes/auto.jpg" alt="auto">
-            </div>
-
-            <div class="motos">
-                <img src="imagenes/moto2.jpg" alt="moto">
-            </div>
-
-            <div class="cuatris">
-                <img src="imagenes/cuatri.jpg" alt="cuatri">
-            </div>
-
-        </div>
 
     </main>
 
-    <footer class="bg-light py-5 fuente">
-        <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Compania Arrate -  Necochea - Argentina</div></div>
+    <footer class="pie">
+            <div><p>Compania Arrate -  Necochea - Argentina</p></div>
+            <a href="https://www.instagram.com/"><img src="imagenes/instagram.png" alt="instagram"></a>
+            <a href="https://www.facebook.com/" ><img src="imagenes/facebook.png" alt="facebook"></a>
     </footer>
+
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- SimpleLightbox plugin JS-->
@@ -138,6 +136,7 @@
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    
 </body>
 
 </html>
