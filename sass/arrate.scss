@@ -1,4 +1,85 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+.motoAuto{
+    display:grid;
+	grid-template-columns: repeat(auto-fit, 380px);
+	grid-template-rows: 260px ;
+	justify-content: space-around;
+
+        img{
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+            width: 100%;
+        }
+}
+
+.pie{
+    display: flex;
+	justify-content: center;
+	background-color: #F8F9FA;
+	height: 120px;
+	padding-top: 2rem;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1.5rem;
+	margin-top: 15px;	
+
+     img{
+        width: 30px;
+    }
+}
+
+.mapa iframe{
+    height: 450px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.buscador{
+  text-align: center;
+	background-color: antiquewhite;
+	height: 100px;
+	font-size: 20px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        .iconDonde{
+            display: flex;
+            justify-content: center;
+            padding: 15px 0 0 0;
+
+            .buscarIcon{
+                padding-right: 10px;
+            }
+            .donde{
+                padding-right: 10px;
+            }
+    
+        }
+        
+}
+
+.contenedor{
+	display: flex;
+	flex-direction: row;
+	justify-items: center;
+	align-items: center;
+	justify-items: center;
+	width: 98%;
+	margin: auto;
+	display: table;
+
+  img{
+    height: 70px;
+    float: left;
+    margin: 6px;
+  }
+  .label{
+    img{
+      height:25px;
+      margin-top: 20px;
+    }
+  }
+}
+
+
+    /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
