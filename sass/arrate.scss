@@ -220,6 +220,14 @@ header{
 	
 }
 
+.tarjetasAutos{
+	display: grid;
+	grid-template-columns:  repeat(auto-fit, 400px);
+	align-content: space-between;
+  	justify-content: space-around;
+	
+}
+
 
 .slider-container{
   text-align: center;
