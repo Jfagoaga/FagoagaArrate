@@ -1,3 +1,69 @@
+ /* mapa, un mixin y un extend */ 
+@import 'variables';
+
+ /* condicionales */
+
+$pantalla:desktop;
+.card1{
+	@if $pantalla == desktop {
+		border-radius: 0%;
+	}
+	@else{
+		border-radius: 10%;
+	}
+}
+
+@for $i from 1 to 5 {
+	D#{$i}{
+		font-size: 12px * $i;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+		padding: 15px;
+		text-align: center;
+	}
+}
+
+@each $background in red, blue, orange, grey, silver,{
+	.bg-#{$background}{
+		background-color: $background;
+	}
+	
+}
+
+$cuadros-cards:(
+	motos: blue,
+	autos: red,
+	financia: orange,
+	honda: tomato,
+);
+
+@each $nombre, $valor in $cuadros-cards {
+	.card-#{$nombre}{
+		background-color: $valor;
+	}
+}
+
+$colores:(
+	uno: red,
+	dos: blue,
+	tres: green,
+);
+
+.card1--nuevo{
+	@extend .card1;
+	background-color: #15a00e;
+}
+
+@mixin card1($col, $bg) {
+		color: $col;
+		background-color: $bg;
+		display: flex;
+    	flex-direction: column;
+    	margin: 15px;
+}
+
+.card1--nuevo2{
+	@include card1(orange, rgb(118, 93, 93));
+}
 
 .motoAuto{
     display:grid;
@@ -16,7 +82,6 @@
 .pie{
     display: flex;
 	justify-content: center;
-	background-color: #F8F9FA;
 	height: 120px;
 	padding-top: 2rem;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -327,17 +392,17 @@ header label{
 .card1{
     display: flex;
     flex-direction: column;
-    background-color: #dbdada;
-    border-radius: 5%;
     margin: 15px;
 }
 
 
 .card1 h2{
-    font-size: 25px;
+    font-size: 2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
     padding: 15px;
     text-align: center;
+	color: $colorFuente;
+	
 }
 
 
@@ -346,6 +411,7 @@ header label{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
     padding: 25px;
     min-height: 80px;
+	color: $colorFuente;
 }
 
 
@@ -399,7 +465,7 @@ p{
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-size: 20px;
 	line-height: 22px;
-	color: rgb(91, 91, 91);
+	color: map-get($colores, dos);
 	padding: 10px;
 }
 
@@ -475,6 +541,7 @@ background-size: .65em auto, 100%;
 		
 		}
 
+
 	
 	}
 
@@ -503,10 +570,12 @@ background-size: .65em auto, 100%;
 		.quienes img{
 			display: none;
 		}
+
 	}
 
 /* Dispositivos Medianos (tablets, 768px y arriba) */
 	@media only screen and  (max-width: 991.98px) {
+
 			
 		.sidebar-box {
 			padding-top: 0px;
@@ -570,6 +639,8 @@ background-size: .65em auto, 100%;
 		.sidebar-box{
 			margin: 0px 20px;
 		}
+
+		
 
 	}
 
